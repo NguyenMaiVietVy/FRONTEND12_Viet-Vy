@@ -1,0 +1,194 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  max-height: 100vh;
+}
+#main {
+}
+.header {
+  height: 52px;
+  margin-bottom: 20px;
+}
+.Hinhanh,
+.Gmail {
+  display: inline-block;
+  padding: 4px;
+  margin-top: 15px;
+  float: right;
+  line-height: 28px;
+  padding-left: 15px;
+  display: inline-block;
+  font-size: 15px;
+}
+.header .background-name {
+  width: 30px;
+  height: 30px;
+  background: url(../IMG/ảnh\ đại\ diện.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  object-fit: cover;
+  padding: 4px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+.header .background-icon {
+  width: 32px;
+  height: 32px;
+  background: url(../IMG/icon\ google\ apps.png) no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  object-fit: cover;
+  padding: 4px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  position: relative;
+}
+.Gmail a {
+  text-decoration: none;
+  color: black;
+  font-family: arial, sans-serif;
+}
+.Hinhanh a {
+  text-decoration: none;
+  color: black;
+  font-family: arial, sans-serif;
+}
+.Gmail:hover a {
+  text-decoration: underline;
+}
+.Hinhanh:hover a {
+  text-decoration: underline;
+}
+.content {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .search-button {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+input {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.search-icon .search {
+  width: 35.5%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  border-radius: 30px;
+  position: absolute;
+  padding-left: 50px;
+  padding-right: 70px;
+}
+.icon .icon-ti-search {
+  position: fixed;
+  left: 33.5%;
+  transform: translateY(100%);
+}
+.mic,
+.keyboard {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background-size: cover;
+  display: inline-block;
+  right: 33%;
+  transform: translateY(62%);
+  cursor: pointer;
+}
+.keyboard {
+  right: 35%;
+}
+.button {
+  position: absolute;
+  max-width: 100%;
+  display: flex;
+  font-size: 15px;
+  background-color: #f8f9fa;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+}
+button {
+  padding: 16px;
+  margin-left: 20px;
+}
+.watch-btn a,
+.search-btn a {
+  text-decoration: none;
+  font-weight: 100;
+  color: #000;
+}
+.watch-btn:hover,
+.search-btn:hover {
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+div p a {
+  font-size: 13px;
+  text-decoration: none;
+}
+div p {
+  position: absolute;
+  font-weight: lighter;
+  left: 40%;
+  top: 24vh;
+}
+.footer {
+}
+.box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ccc;
+  opacity: 0.6;
+  display: block;
+}
+.footer-nav {
+  position: absolute;
+  bottom: 59px;
+  display: block;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  line-height: 60px;
+}
+.footer-address {
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  margin: 20px;
+  line-height: 60px;
+}
+.subnav1 {
+  float: right;
+}
+.subnav li:hover a {
+  text-decoration: underline;
+}
