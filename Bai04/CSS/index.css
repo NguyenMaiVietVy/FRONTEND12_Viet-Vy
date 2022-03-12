@@ -1,0 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.boxA {
+  width: 200px;
+  height: 100px;
+  margin: 60px auto;
+  background-color: blue;
+  position: relative;
+}
+.boxB {
+  width: 70%;
+  height: 70%;
+  background-color: yellow;
+  position: absolute;
+  z-index: -1;
+  bottom: -10%;
+  left: 50%;
+}
+.boxC {
+  width: 70%;
+  height: 70%;
+  background-color: red;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  transform: translateX(-20px);
+}
+p {
+  text-align: center;
+  line-height: 100px;
+}

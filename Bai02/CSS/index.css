@@ -1,0 +1,17 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#box {
+  width: 600px;
+  height: 297px;
+  background-color: #474463;
+  margin: 20px auto;
+}
+p {
+  font-size: 16pt;
+  text-align: center;
+  padding: 111px 33px;
+  font-family: "Sansita Swashed", cursive;
+  color: #fff;
+}
