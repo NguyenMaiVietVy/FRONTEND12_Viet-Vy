@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+}
+#main {
+  width: 1000px;
+  height: 700px;
+  background-color: #fff;
+  margin: 20px auto;
+  position: relative;
+  box-shadow: 2.5px 2.5px 2.5px 2.5px #dadce0;
+  border-radius: 5px;
+}
+form {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  font-family: "Sansita Swashed", cursive;
+}
+.image {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 45%;
+  height: 90%;
+  background-image: linear-gradient(
+    to right bottom,
+    #a986e2,
+    #9771da,
+    #855dd1,
+    #7149c9,
+    #5c34c0,
+    #5831bf,
+    #532fbe,
+    #4e2cbd,
+    #5b3bc3,
+    #684ac9,
+    #7458cf,
+    #8066d4
+  );
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+h1 {
+  color: #262e5c;
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222351;
+  margin-bottom: 10px;
+}
+input {
+  width: 402px;
+  height: 56px;
+  outline: none;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+input:focus {
+  border: 1px solid cornflowerblue;
+  box-shadow: 2px 2px 2px 2px #dadce0;
+}
+::placeholder {
+  margin-left: 23px;
+  color: #a3a4b6;
+}
+input[type="text"] {
+  padding-left: 13px;
+}
+input[type="checkbox"] {
+  width: 27px;
+  height: 20px;
+  outline: none;
+  border: 1px solid #dadce0;
+  margin-right: 20px;
+}
+.checkbox {
+  font-size: 13px;
+  font-weight: 400;
+  color: #a3a4b6;
+}
+input[type="submit"] {
+  background-color: #845ec2;
+  color: aliceblue;
+  letter-spacing: 2px;
+}
+.image-text {
+  list-style-type: none;
+}
+.image-text {
+  font-family: "Times New Roman", Times, serif;
+  color: #dadce0;
+  position: relative;
+  left: 20px;
+  top: 50px;
+  display: inline-block;
+  padding-left: 20px;
+}
+.image-text li h1 {
+  position: relative;
+  top: 10px;
+  font-size: 19px;
+  color: #dadce0;
+}
+.image-text li p {
+  width: 51%;
+  padding-bottom: 15px;
+}
+.image-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #d1d1d1;
+}
+.image-check {
+  display: inline-block;
+  padding: 5px;
+}
+/*  */
