@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    #00c3c7,
+    #00b0c5,
+    #009ec0,
+    #008ab7,
+    #0077aa,
+    #0069a3,
+    #005b9a,
+    #104d90,
+    #224089,
+    #313180,
+    #3e1f73,
+    #480064
+  );
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.img {
+  width: 800px;
+  height: 528px;
+  background: url(../IMG/ảnh\ deadline1.png) top center/cover no-repeat;
+  border-radius: 5px;
+}
+.subnav {
+  display: flex;
+  margin-top: 5px;
+  width: 800px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  align-items: center;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
+  font-size: 12px;
+}
+.subnav .text-nav {
+  text-align: center;
+  font-weight: 650;
+  font-size: 15px;
+}
+li:first-child {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+li:last-child {
+  margin-right: 20px;
+  margin-left: 20px;
+}

@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ff5e90;
+}
+li {
+  list-style-type: none;
+}
+#main {
+  width: 1203px;
+  height: 591px;
+  background-color: aliceblue;
+  margin: 20px auto;
+  border-radius: 2px;
+  box-shadow: 5px 5px 5px 5px solid #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav {
+  width: 100%;
+  height: 92px;
+  background-image: linear-gradient(
+    to right,
+    #cf308a,
+    #c8398e,
+    #c04191,
+    #b94794,
+    #b14d96
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul li {
+  display: inline-flex;
+  margin: 0 20px;
+  color: #fff;
+  opacity: 0.4;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.box {
+  margin-left: 30px;
+  padding: 20px;
+}
+.twitter-icon,
+.facebook-icon,
+.github-icon {
+  background-color: #97619d;
+}
+.instagram-icon {
+  background-color: #8e679e;
+}
+.name li:hover {
+  opacity: 1;
+  background-color: #8c2e6a;
+  color: #fff;
+  border-radius: 25px;
+}
+.content {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
