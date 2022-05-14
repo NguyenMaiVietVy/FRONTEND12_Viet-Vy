@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- change theme -->
+    <meta name="theme-color" content="#fff">
+    <!-- Title -->
+    <title>Guess number</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="./IMG/icon game.png" type="image/x-icon">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,600;1,200&family=Roboto:wght@100&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <!-- font-awesome 4.7 -->
+    <link href='./IMG/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+     <!-- CSS -->
+     <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- top nav -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                Guess number
+            </a>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fa fa-sun-o" aria-hidden="true"></i>
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+                <div class="ball"></div>
+           </label>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- main-game -->
+    <!-- start game -->
+    <!-- screen game -->
+    <div class="main-game active">
+        <div class="start-screen active" id="start-screen">
+            <input type="text" placeholder="Nhập tên của bạn" maxlength="100" class="input-name" id="input-name">
+            <div class="btn" id="btn-level">
+                Dễ
+            </div>
+            <div class="btn btn-blue" id="btn-play">Chơi mới</div>
+        </div>
+        <div class="main-number-grid" id="main-number-grid">
+            <!-- number -->
+        </div>
+        <div class="result">
+            <div class="save">
+                Bạn có 3 lượt chơi:   
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="box">
+                <div class="result-number"></div>
+                <div class="result-number"></div>
+                <div class="result-number"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/theme.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

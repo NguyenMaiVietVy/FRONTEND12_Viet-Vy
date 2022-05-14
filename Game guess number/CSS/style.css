@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Potta One', cursive;
+    max-width: 1280px;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #fff;
+    color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 5px 2px #f0f2f5;
+    z-index: 99;
+}
+
+/* nav start */
+.nav-container {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: var(--nav-size);
+}
+
+.nav-logo {
+    font-size: 2rem;
+    color: #00aeef;
+}
+
+/* CSS-theme-color */
+
+body.dark {
+    background-color: #1a1a2e;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+    position: relative;
+}
+
+.ball {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon-o{
+    color: #f1c40f;
+
+}
+
+.fa-sun-o{
+    color: #f39c12;
+}
+/* nav end */
+/* main-game start */
+
+/* start screen start */
+.start-screen > * + *  {
+    margin-top: 20px;
+}
+
+.start-screen {
+    margin-left: 40px;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.input-name {
+    height: 20px;
+    width: 180px;
+    border-radius: 10px;
+    outline: 0;
+    background-color: #f0f2f5;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.btn {
+    height: 40px;
+    width: 180px;
+    background-color: #f0f2f5;
+    color: #000;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #00aeef;
+    color: #fff;
+}
+
+.btn-blue:active {
+    color:#f1c40f;
+    background-color: #000;
+}
+
+.input-err {
+    border-color: #e91e63;
+    animation: bounce 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* start screen end */
+/* game-start */
+.main-game {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 30px 0;
+    transform: translateX(100%);
+    transition: transform .3s ease-in-out;
+}
+
+.main-game.active {
+    transform: translateX(0);
+}
+
+.main-number-grid {
+    display: grid;
+    gap: 20px;
+    width: 5px;
+    grid-template-columns: repeat(6, auto);
+    position: fixed;
+    left:35%;
+}
+
+
+.main-grid-cell {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #2a2a38;
+    color: #00aeef;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.main-grid-cell.filled {
+    background-color: #caf0f8;
+    color: #000;
+}
+
+.main-grid-cell.selected {
+    background-color: #00aeef;
+    color: #fff;
+}
+
+.main-grid-cell:hover {
+    border: 2px solid #00aeef;
+}
+
+.main-grid-cell.hover {
+    border: 3px solid #00aeef;
+}
+
+.dark .main-grid-cell.hover {
+    border: 1px solid #00aeef;
+}
+
+.main-grid-cell.err {
+    background-color: #e91e63;
+    color: #fff;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* game-end  */
+/* result-start */
+.result {
+    position: fixed;
+    width: 480px;
+    height: 600px;
+    border: 2px solid #00aeef;
+    left: 80%;
+}
+
+.result .save {
+    font-size: 30px;
+    color: #00aeef;
+    margin: 5px 10px;
+}
+
+.fa.fa-heart-o {
+    color: red;
+    margin-left: 20px;
+}
+
+.box {
+    width: 100%;
+    height: 520px;
+    background-color: #caf0f8;
+    border-radius: 1px solid red;
+    overflow: hidden;
+}
+
+.result-number {
+    width: 200px;
+    height: 80px;
+    border: 1px solid #00aeef;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 50px;
+    color: #f39c12;
+    text-align: left;
+}
